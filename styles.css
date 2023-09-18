@@ -1,0 +1,64 @@
+@keyframes dev-animation {
+    0%,100% {
+      transform: rotate(0deg);transform-origin: 50% 0;
+    }
+    10% {
+      transform: rotate(2deg);
+    }
+    20%,40%,60% {
+      transform: rotate(-4deg);
+    }
+    30%,50%,70% {
+      transform: rotate(4deg);
+    }
+    80% {
+      transform: rotate(-2deg);
+    }
+    90% {
+      transform: rotate(2deg);
+    }
+    
+  }
+
+  @keyframes bounce-animation {
+    0%,100% {
+      transform: translateY(0);
+    }
+    10%,30%,50%,70% {
+      transform: translateY(-4px);
+    }
+    20%,40%,60% {
+      transform: translateY(4px);
+    }
+    80% {
+      transform: translateY(3.2px);
+    }
+    90% {
+      transform: translateY(-3.2px);
+    }
+    
+  }
+
+.accent-words {
+    color: darkblue;
+}
+
+.dev-animation {
+    animation: none;
+}
+
+.dev-animation:hover {
+    animation: dev-animation 1.5s ease 0s infinite normal none;
+}
+
+.bounce-animation {
+    animation: none;
+}
+
+.bounce-animation:hover {
+    animation: bounce-animation 2s ease 0s infinite normal none;;
+}
+
+.colored {
+    color: blue;
+}
